@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(166, 184, 184);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(70px);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: -70px;
+}
+.calculator{
+    background-color: rgb(24, 48, 59);
+    width: max-content;
+    border-radius: 10px;
+    
+}
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    color: white;
+}
+.display input{
+    background-color: transparent;
+    text-align: right;
+    flex: 1;
+    font-size: 40px;
+    box-shadow: none;
+}
+input{
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(30, 69, 87);
+    color: white;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255,255,0.1) ;
+    cursor: pointer;
+    font-size: 20px;
+}
+.equal{
+    width: 145px;
+    color: aqua;
+}
+.erti-class{
+    color: aqua;
+}
+.by{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-130px);
+}
+@media(max-width:1000px) {
+    .title{
+        transform: translateY(20px);
+    }
+    .by{
+        transform: translatey(-70px);
+    }
+}
